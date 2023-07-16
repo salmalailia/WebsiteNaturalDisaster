@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Classification</title>
+    <style>
+        body {
+            background-color: #1DA1F2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Result</h1>
+        <p>Translated Text: {{ text }}</p>
+        <p>Classification: {{ prediction }}</p>
+    </div>
+</body>
+</html>

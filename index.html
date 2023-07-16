@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Classification</title>
+    <style>
+        body {
+            background-color: #1DA1F2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: white;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            color: white;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 300px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: #1DA1F2;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #D9D9D9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Classification</h1>
+    <form action="/predict" method="POST">
+        <label for="text">Enter Tweet (Bahasa Indonesia):</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Click Me!">
+    </form>
+</body>
+</html>
